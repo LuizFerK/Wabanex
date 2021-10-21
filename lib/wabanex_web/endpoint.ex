@@ -7,12 +7,8 @@ defmodule WabanexWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_wabanex_key",
-    signing_salt: "fjZyCiCO"
+    signing_salt: "OJiK2+ku"
   ]
-
-  socket "/socket", WabanexWeb.UserSocket,
-    websocket: true,
-    longpoll: false
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
@@ -24,7 +20,7 @@ defmodule WabanexWeb.Endpoint do
     at: "/",
     from: :wabanex,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(assets fonts images favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
