@@ -7,9 +7,9 @@ defmodule Wabanex.User do
   @fields [:email, :password, :name]
 
   schema "users" do
-    field :email, :string
-    field :name, :string
-    field :password, :string
+    field(:email, :string)
+    field(:name, :string)
+    field(:password, :string)
 
     timestamps()
   end
@@ -21,5 +21,6 @@ defmodule Wabanex.User do
     |> validate_length(:password, min: 6)
     |> validate_length(:name, min: 2)
     |> validate_format(:email, ~r/@/)
+    |> unique_constraint([:email])
   end
 end
