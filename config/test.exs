@@ -17,7 +17,7 @@ config :wabanex, Wabanex.Repo,
 # you can enable the server option below.
 config :wabanex, WabanexWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "v56CNP+G/vD14s1wPApje/NjOGdQO4gOMHJGXroRzOin+bzGZc45tt2MYDCIU6Li",
+  secret_key_base: "f3pkiVEK2w59nYxbU5Da1Rmv6c516HvKeeLy95rE0Rrgxq4fRz+InrqApnXjZd5s",
   server: false
 
 # Print only warnings and errors during test

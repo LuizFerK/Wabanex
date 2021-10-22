@@ -7,7 +7,7 @@ defmodule WabanexWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_wabanex_key",
-    signing_salt: "OJiK2+ku"
+    signing_salt: "t/6+k/uJ"
   ]
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
